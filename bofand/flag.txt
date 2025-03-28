@@ -1,1 +1,1 @@
-REDACATED
+flag{bof_and_fsa}
