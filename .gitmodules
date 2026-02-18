@@ -1,0 +1,3 @@
+[submodule "nittc_ctf"]
+	path = nittc_ctf
+	url = git@github.com:trimscash/nittc_ctf.git
