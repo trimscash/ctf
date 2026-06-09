@@ -4,3 +4,6 @@
 [submodule "bunaiCTF2022"]
 	path = bunaiCTF2022
 	url = git@github.com:trimscash/bunaiCTF2022.git
+[submodule "lets_ctf"]
+	path = lets_ctf
+	url = git@github.com:trimscash/lets_ctf.git
